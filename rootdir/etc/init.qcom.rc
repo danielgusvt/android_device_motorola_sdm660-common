@@ -1258,12 +1258,6 @@ service vendor.move_time_data /system/bin/move_time_data.sh
     disabled
     oneshot
 
-service vendor.vl53l1_daemon /vendor/bin/vl53l1_daemon
-    class late_start
-    user root
-    group root
-    socket vl53l1_daemon stream 660 root system
-
 service vendor.mmi-laser-sh /vendor/bin/init.mmi.laser.sh
     class core
     user root
